@@ -1,66 +1,136 @@
+<html>
+  <head>
+    <title>Garage island</title>
+    <link href="public/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="navBar">
+      <div onclick="javascript:location.href='/'" class="title">
+        Garage island
+      </div>
+      <div onclick="javascript:location.href='./map'" class="item">
+        Map
+      </div>
+      <div onclick="javascript:location.href='./aboutUs'" class="item">
+        About us
+      </div>
+      <div class="item signItem">
+        <div onclick="javascript:location.href='./login'">
+          login
+        </div>        
+        /
+        <div onclick="javascript:location.href='./signup'">
+          sign up
+        </div>        
+      </div>
+    </div>
+    <div class="page">
+      <div id="googleMap">
+        <div id="map"></div>
+      </div>
+      <div class="booking">
+        <div class="bookingTitle">Book now</div>
+        <div class="sectionContainer">
+          <form class="form">
+            <div class="dualInput"> 
+              <div>Select Garage:</div>
+              <select id="select"></select>
+            </div>
+            <div class="dualInput"> 
+              <div>Expected Arrival Time:</div>
+              <!-- <div class="form-row show-inputbtns">
+                  <input id='dateID' type="date" data-date-inline-picker="false" data-date-open-on-focus="true" />
+              </div> -->
+             <input class="time" id="time" type="text" value="14:30" onchange="console.log('Time changed')" />
+              <!-- <div class="your-time-field"></div> -->
+            </div>
+          </form>
+          <a class="submitBook btn" id="submitBook">Submit</a>
+        </div>
+      </div>
+      <div class="guides">
+        <div class="sectionContainer">
+          <div class="guideTitle">
+            See traffic or search for places for your drive
+          </div>
+          <div class="guideContent">
+            Note: This feature is only available on Android devices and in some countries. Using Google Maps, you can see traffic for your drive, search for place easily, or navigate to a place quickly even if you don't enter a destination in Maps.
+          </div>
+        </div>
+        <div class="sectionContainer">
+          <div class="guideTitle">
+            See traffic for your drive
+          </div>
+          <div class="guideContent">
+            To see traffic for your drive, follow the steps below.
+            <ol>
+              <li>click on Link to google map.</li> 
+              <li>Touch the Menu .</li>
+              <li>Choose Start driving.</li>
+            </ol>
+            You'll also see: <br/>
+            How long it takes to drive to a suggested destination. Destinations are shown based on data from Google Account settings. Traffic delays, like accidents and construction work, on the way.
+          </div>
+        </div>
+        <div class="sectionContainer">
+          <div class="guideTitle">
+            Create a driving shortcut
+          </div>
+          <div class="guideContent">
+            To see traffic easily for your drive, create a driving shortcut for your mobile screen:
+            <ol>
+              <li>click on Link to google map.</li>
+              <li>In the top left, touch the Menu .</li>
+              <li>Choose Settings > Navigation settings > Add Driving shortcut.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="sectionContainer">
+          <div class="guideTitle">
+            Get driving notifications using Bluetooth
+          </div>
+          <div class="guideContent">
+            If you have Bluetooth turned on and your phone or tablet is paired to your car, you'll get a driving notification when you start your car. To turn on notifications, follow the steps below.
+            <ol>
+              <li>click on Link to google map.</li>
+              <li>In the top left, touch the Menu .</li>
+              <li>Choose Settings > Navigation settings > Driving notifications.</li>
+              <li>Search and navigate to a place.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="sectionContainer">
+          <div class="guideTitle">
+            To search for and navigate to a place for your drive
+          </div>
+          <div class="guideContent">
+            <ol>
+              <li>click on Link to google map.</li>
+              <li>In the top left, touch the Menu .</li>
+              <li>Choose Start driving.</li>
+              <li>In the top right, touch Search .</li>
+              <li>Touch a category or search for a specific place.</li>
+              <li>You'll see places near your route as red dots. To see a place's name and how long it takes to get there, touch a dot.</li>
+              <li>To go to that place, touch Navigate. If you don't want to go there, touch Dismiss. If you don't choose an option, you'll automatically navigate to that place.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="sectionContainer">
+          <div class="guideTitle">
+            Tips:
+          </div>
+          <div class="guideContent">
+            <li>
+              You can navigate to a place by touching the "Set Destination" box at the top and entering a place.
+            </li>
+            <li>You can see alternate routes when you start navigation.</li>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <script src="public/bundle.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPbBtJEKCcC1vFnq-Ly6l-exPgCG5Gq8k&callback=myMap"></script>
+  </body>
 
-
-	<html>
-	  
-	  <head>
-	  </head>
-      <link href="map.css" rel="stylesheet" type="text/css" media="screen"/>
-
-	  <body>
-      
-<div id="big bag">
-<div id="bag">
-<div id="link">
-		<p><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.google.com%2Fmaps%2F%4026.311046%2C30.9055231%2C9z&h=ATPg9aJ5PY2RkevDxx7VF1IMPVbN44tbINCHyMU22PN-GW9jzh7Q2epEPiL9CYa0ciOtJo3f4c-V-U1lltGKt-0fTAXGHnSkIdszL-Kx4xzMe6eFBNW7G6W-0-i9xRZavf5bj2U">Link to google map</a></p>
-        </div><!--link-->
-        <ol>
-        <h1>See traffic or search for places for your drive </h1>
-	<p7>
-Note: This feature is only available on Android devices and in some countries.
-
-Using Google Maps, you can see traffic for your drive, search for place easily, or navigate to a place quickly even if you don't enter a destination in Maps.</P7></ol>
-<ol>
-<h2>See traffic for your drive</h2>
-<p1>To see traffic for your drive, follow the steps below.
-
-<li>click on Link to google map.</li> 
-<li>Touch the Menu .</li>
-<li>Choose Start driving.</li>
-You'll also see:
-How long it takes to drive to a suggested destination. Destinations are shown based on data from Google Account settings.
-Traffic delays, like accidents and construction work, on the way.</p1></ol>
-<ol>
-<h3>Create a driving shortcut</h3>
-<p2>To see traffic easily for your drive, create a driving shortcut for your mobile screen:
-
-<li>click on Link to google map.</li>
-<li>In the top left, touch the Menu .</li>
-<li>Choose Settings > Navigation settings > Add Driving shortcut.</li></p2></ol>
-<ol>
-<h4>Get driving notifications using Bluetooth</h4>
-<p3>If you have Bluetooth turned on and your phone or tablet is paired to your car, you'll get a driving notification when you start your car. To turn on notifications, follow the steps below.
-
-<li>click on Link to google map.</li>
-<li>In the top left, touch the Menu .</li>
-<li>Choose Settings > Navigation settings > Driving notifications.</li>
-<li>Search and navigate to a place.</li></p3></ol>
-<ol>
-<h5>To search for and navigate to a place for your drive</h5>
-<p4> follow the steps below.
-<li>click on Link to google map.</li>
-<li>In the top left, touch the Menu .</li>
-<li>Choose Start driving.</li>
-<li>In the top right, touch Search .</li>
-<li>Touch a category or search for a specific place.</li>
-<li>You'll see places near your route as red dots. To see a place's name and how long it takes to get there, touch a dot.</li>
-<li>To go to that place, touch Navigate. If you don't want to go there, touch Dismiss. If you don't choose an option, you'll automatically navigate to that place.</li></p4></ol>
-<ul>
-<h6>Tips:</h6>
-
-<p5><li>You can navigate to a place by touching the "Set Destination" box at the top and entering a place.</li>
-<li>You can see alternate routes when you start navigation.</li></p5></ul>
-	</div><!--bag-->
-</div><!--big bag-->  
-	  </body>
-
-	</html>
+</html>

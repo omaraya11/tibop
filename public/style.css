@@ -1,0 +1,194 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+body * {
+  box-sizing: border-box;
+  font-family: Lato;;
+}
+ol, ul {
+  margin: 0;
+  padding: 0 20px;
+}
+.page {
+  max-width: 1000px;
+}
+.page {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.navBar {
+  display: flex;
+  /*justify-content: center;*/
+  align-items: baseline;
+  color: #FFF;
+  font-family: Lato;
+  font-weight: 300;
+  /*background-color: purple;*/
+  background-color: #922;
+  width: 100%;
+  padding: 20px;
+}
+@media  screen and (min-width: 1000px) {
+  .navBar {
+    padding: 20px calc((100vw - 960px)/2) ; 
+  }
+}
+.dualSection {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px){
+  .dualSection {
+    flex-direction: row;
+  }
+}
+.sectionContainer {
+  padding: 20px 20px 0;
+}
+.navBar > * {
+  cursor: pointer;
+}
+.navBar .title {
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+.navBar .item {
+  font-size: 16px;
+  margin-left: 10px;
+}
+.heroContainer {
+    background: #FFF url("./images/img02.jpg") no-repeat center; 
+    background-size: cover;
+    height: 300px;
+}
+.sectionTitle{
+  width: 100%;
+  display: flex;
+  font-size: 28px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.sectionParagraph {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.sectionParagraph:last-child {
+  margin-bottom: 0;
+}
+.guideTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.guideContent {
+  list-style-type: decimal;
+  font-size: 16px;
+}
+
+.projectName{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.points {
+  font-size: 16px
+}
+
+.sideTitle {
+  font-size: 20px;
+}
+.supervision {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.doneBy {
+  margin-top: 10px;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.doneBy li{
+  margin-bottom: 5px;
+  width: 50%;
+  min-width: 280px;
+}
+#googleMap {
+  margin: 0 20px;
+}
+#googleMap #map {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+.booking {
+  border: 1px solid #000;
+  margin: 20px;
+  font-size: 18px;
+}
+.bookingTitle {
+  margin-top: 20px;
+  font-size: 28px;
+  text-align: center;
+  width: 100%;
+}
+.form {
+  display: flex;  
+}
+.form > * {
+  flex-basis: 50%;
+  line-height: 200%;
+  vertical-align: middle;
+}
+.dualInput {
+  display: flex;
+}
+.dualInput > div {
+  margin-right: 10px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.submitBook {
+  margin-bottom: 20px;
+}
+
+.navbar .signItem  {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row-reverse;
+}
+
+.navbar .signItem  > * { padding: 0 5px;}
+
+.signForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+  margin: 20px;
+  padding: 20px;
+  font-size: 18px;
+}
+.signForm > div:first-child {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.signRow {
+  margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 350px;
+}

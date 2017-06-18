@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Garage island</title>
+    <link href="public/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="public/style.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="public/bundle.js"></script>
+  </head>
+  <body>
+    <div class="navBar">
+      <div onclick="javascript:location.href='/'" class="title">
+        Garage island
+      </div>
+      <div onclick="javascript:location.href='./map'" class="item">
+        Map
+      </div>
+      <div onclick="javascript:location.href='./aboutUs'" class="item">
+        About us
+      </div>
+      <div class="item signItem">
+        <div onclick="javascript:location.href='./login'">
+          login
+        </div>        
+        /
+        <div onclick="javascript:location.href='./signup'">
+          Sign up
+        </div>        
+      </div>
+    </div>
+    <div class="page">
+      <div class="signForm">
+        <div>Login</div>
+        <div class="signRow">
+          <div>Username :</div>
+          <input id="loginUsername"></input>
+        </div>
+        <div class="signRow">
+          <div>Password :</div>
+          <input id="loginPassword"></input>
+        </div>
+        <div class="btn" id="loginBtn">
+          Login
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
