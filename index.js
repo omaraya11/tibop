@@ -70,10 +70,10 @@ $(()=>{
       var garage = document.getElementById('select').value;
       const today =  timestamp('YYYY-MM-DD');
       var jsDate = new Date(today+' '+date+':00');
-      var bookingTimestamp = Date.parse(jsDate);
-
+      var bookingTimestampUTC = Date.parse(jsDate);
+      var bookingTimestampCairo = bookingTimestampUTC + 7200000 ;
       var bookingObject = {
-        "expectedArrivalTime": bookingTimestamp ,
+        "expectedArrivalTime": bookingTimestampCairo,
         "userId": localStorage.getItem('userId'),
         "garageId": garage
       }
