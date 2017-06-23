@@ -32,7 +32,7 @@ ol, ul {
 }
 @media  screen and (min-width: 1000px) {
   .navBar {
-    padding: 20px calc((100vw - 960px)/2) ; 
+    padding: 20px calc((100vw - 960px)/2) ;
   }
 }
 .dualSection {
@@ -60,7 +60,7 @@ ol, ul {
   margin-left: 10px;
 }
 .heroContainer {
-    background: #FFF url("./images/img02.jpg") no-repeat center; 
+    background: #FFF url("./images/img02.jpg") no-repeat center;
     background-size: cover;
     height: 300px;
 }
@@ -138,7 +138,7 @@ ol, ul {
   width: 100%;
 }
 .form {
-  display: flex;  
+  display: flex;
 }
 .form > * {
   flex-basis: 50%;
@@ -164,13 +164,16 @@ ol, ul {
   margin-bottom: 20px;
 }
 
-.navbar .signItem  {
+#logoutItem, #signItem  {
   display: flex;
   flex-grow: 1;
   flex-direction: row-reverse;
+  display: none;
 }
 
-.navbar .signItem  > * { padding: 0 5px;}
+#signItem  > *, #logoutItem > * { 
+  padding: 0 5px;
+}
 
 .signForm {
   display: flex;

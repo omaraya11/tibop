@@ -15,14 +15,21 @@
       <div onclick="javascript:location.href='./aboutUs'" class="item">
         About us
       </div>
-      <div class="item signItem">
+      <div class="item" id="signItem">
         <div onclick="javascript:location.href='./login'">
           login
-        </div>        
+        </div>
         /
         <div onclick="javascript:location.href='./signup'">
-          sign up
-        </div>        
+          Sign up
+        </div>
+      </div>
+      <div class="item" id="logoutItem">
+        <div id="logoutBtn">
+          logout
+        </div>
+        /
+        <div id="username"></div>
       </div>
     </div>
     <div class="page">
@@ -33,11 +40,11 @@
         <div class="bookingTitle">Book now</div>
         <div class="sectionContainer">
           <form class="form">
-            <div class="dualInput"> 
+            <div class="dualInput">
               <div>Select Garage:</div>
               <select id="select"></select>
             </div>
-            <div class="dualInput"> 
+            <div class="dualInput">
               <div>Expected Arrival Time:</div>
               <!-- <div class="form-row show-inputbtns">
                   <input id='dateID' type="date" data-date-inline-picker="false" data-date-open-on-focus="true" />
@@ -65,7 +72,7 @@
           <div class="guideContent">
             To see traffic for your drive, follow the steps below.
             <ol>
-              <li>click on Link to google map.</li> 
+              <li>click on Link to google map.</li>
               <li>Touch the Menu .</li>
               <li>Choose Start driving.</li>
             </ol>
@@ -126,7 +133,7 @@
             </li>
             <li>You can see alternate routes when you start navigation.</li>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
     <script src="public/bundle.js"></script>
