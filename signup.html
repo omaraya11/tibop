@@ -17,21 +17,28 @@
       <div onclick="javascript:location.href='./aboutUs'" class="item">
         About us
       </div>
-      <div class="item signItem">
+      <div class="item" id="signItem">
         <div onclick="javascript:location.href='./login'">
           login
-        </div>        
+        </div>
         /
         <div onclick="javascript:location.href='./signup'">
-          sign up
+          Sign up
         </div>
+      </div>
+      <div class="item" id="logoutItem">
+        <div id="logoutBtn">
+          logout
+        </div>
+        /
+        <div id="username"></div>
       </div>
     </div>
     <div class="page">
       <div class="signForm">
         <div>Sign up</div>
         <div class="signRow">
-          <div>Userame :</div>
+          <div>Username :</div>
           <input id="signupUsername"></input>
         </div>
         <div class="signRow">

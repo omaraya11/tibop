@@ -45,7 +45,8 @@ ol, ul {
   }
 }
 .sectionContainer {
-  padding: 20px 20px 0;
+  /*padding: 20px;*/
+  border: 2px solid #922;
 }
 .navBar > * {
   cursor: pointer;
@@ -60,23 +61,34 @@ ol, ul {
   margin-left: 10px;
 }
 .heroContainer {
+    margin-bottom: 20px;
     background: #FFF url("./images/img02.jpg") no-repeat center;
     background-size: cover;
     height: 300px;
 }
+.smallImageContainer {
+    background: #FFF url("./images/img03.jpg") no-repeat center;
+    background-size: contain;
+    height: 300px;
+}
 .sectionTitle{
   width: 100%;
+  background: #922; /* For browsers that do not support gradients */
+  color: #fff;
+  padding: 10px;
   display: flex;
   font-size: 28px;
-  margin-bottom: 20px;
+  font-weight: 600;
   justify-content: center;
-}
-.sectionParagraph {
-  font-size: 16px;
   margin-bottom: 10px;
 }
+.sectionParagraph {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px 10px;
+}
 .sectionParagraph:last-child {
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
 }
 .guideTitle {
   font-size: 24px;
@@ -194,4 +206,31 @@ ol, ul {
   width: 100%;
   justify-content: space-between;
   max-width: 350px;
+}
+.dualSectionContainer {
+  display: flex;
+}
+.dualSectionContainer > * {
+  flex-basis: calc(40% - 20px);
+}
+.dualSectionContainer > *:first-child {
+  margin-right: 20px;
+  flex-basis: 60%;
+}
+
+.logosList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.logosList > * {
+  width: 50px;
+  height: 50px;
+}
+.imagesSectionContainer {
+  margin: 20px 0;
+  display: flex;
+}
+.imagesSectionContainer > *:last-child {
+  flex-grow: 1;
 }

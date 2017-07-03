@@ -3,7 +3,7 @@
     <title>Garage island</title>
     <link href="public/normalize.css" rel="stylesheet" type="text/css" />
     <link href="public/style.css" rel="stylesheet" type="text/css" />
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpuq_WjyVkA-HZqhE_9RY8zoEaXyBJ0EA&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpuq_WjyVkA-HZqhE_9RY8zoEaXyBJ0EA&callback=myMap"></script>
     <script src="public/bundle.js"></script>
   </head>
   <body>
@@ -17,14 +17,21 @@
       <div onclick="javascript:location.href='./aboutUs'" class="item">
         About us
       </div>
-      <div class="item signItem">
+      <div class="item" id="signItem">
         <div onclick="javascript:location.href='./login'">
           login
-        </div>        
+        </div>
         /
         <div onclick="javascript:location.href='./signup'">
-          sign up
-        </div>        
+          Sign up
+        </div>
+      </div>
+      <div class="item" id="logoutItem">
+        <div id="logoutBtn">
+          logout
+        </div>
+        /
+        <div id="username"></div>
       </div>
     </div>
     <div class="page">
@@ -35,7 +42,7 @@
           <li>Whether you are in the the parking location or not,near or far just use your mobile for reservation.</li>
           <li>The Ostler can help you any time.</li>
         </ul>
-      </div>  
+      </div>
       <div class="sectionContainer">
         <div class="sideTitle">
           The project effort carried out under supervision:

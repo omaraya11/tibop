@@ -2,7 +2,8 @@
   <head>
     <title>Garage island</title>
     <link href="public/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="public/style.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="public/style.css" rel="stylesheet" type="text/css" /> -->
+    <link href="public/home.css" rel="stylesheet" type="text/css" />
     <script src="public/bundle.js"></script>
   </head>
   <body>
@@ -16,14 +17,21 @@
       <div onclick="javascript:location.href='./aboutUs'" class="item">
         About us
       </div>
-      <div class="item signItem">
+      <div class="item" id="signItem">
         <div onclick="javascript:location.href='./login'">
           login
-        </div>        
+        </div>
         /
         <div onclick="javascript:location.href='./signup'">
           Sign up
-        </div>        
+        </div>
+      </div>
+      <div class="item" id="logoutItem">
+        <div id="logoutBtn">
+          logout
+        </div>
+        /
+        <div id="username"></div>
       </div>
     </div>
     <div class="page">
@@ -39,12 +47,55 @@
           if you like to book now, please select your place on the map to find your road to your final distenation.
         </div>
       </div>
-      <div class="sectionContainer">
-        <div class="sectionTitle">
-          Our Service
+      <div class="imagesSectionContainer">
+        <div class="logosList">
+          <div style="
+              display:flex;
+              background: url(public/images/youtubelogo.png) no-repeat center;
+              background-size: cover;
+            ">
+            <a href="http://www.youtube.com" style="width: 100%"></a>
+          </div>
+          <div style="
+              display:flex;
+              background: url(public/images/facebooklogo.png) no-repeat center;
+              background-size: cover;
+            ">
+            <a href="http://www.facebook.com" style="width: 100%"></a>
+          </div>
+          <div style="
+              display:flex;
+              background: url(public/images/googlelogo.jpg) no-repeat center;
+              background-size: cover;
+            ">
+            <a href="http://www.plus.google.com" style="width: 100%"></a>
+          </div>
+          <div style="
+              display:flex;
+              background: url(public/images/twitterlogo.jpg) no-repeat center;
+              background-size: cover;
+            ">
+            <a href="http://www.twitter.com" style="width: 100%"></a>
+          </div>
         </div>
-        <div class="sectionParagraph">
-          if you like to book now, please select your place on the map to find your road to your final distenation.
+        <div class="smallImageContainer"></div>
+      </div>
+      <div class="dualSectionContainer">
+        <div class="sectionContainer">
+          <div class="sectionTitle">
+            Our Service
+          </div>
+          <div class="sectionParagraph">
+            if you like to book now, please select your place on the map to find your road to your final distenation.
+          </div>
+        </div>
+        <div class="sectionContainer">
+          <div class="sectionTitle">
+            Recent updates
+          </div>
+          <div class="sectionParagraph">
+            Other
+          </div>
         </div>
       </div>
     </div>
