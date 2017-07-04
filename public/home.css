@@ -26,7 +26,7 @@ ol, ul {
   font-family: Lato;
   font-weight: 300;
   /*background-color: purple;*/
-  background-color: #922;
+  background-color: #b93b8f;
   width: 100%;
   padding: 20px;
 }
@@ -46,7 +46,7 @@ ol, ul {
 }
 .sectionContainer {
   /*padding: 20px;*/
-  border: 2px solid #922;
+  border: 2px solid #b93b8f;
 }
 .navBar > * {
   cursor: pointer;
@@ -73,7 +73,7 @@ ol, ul {
 }
 .sectionTitle{
   width: 100%;
-  background: #922; /* For browsers that do not support gradients */
+  background: #b93b8f; /* For browsers that do not support gradients */
   color: #fff;
   padding: 10px;
   display: flex;
